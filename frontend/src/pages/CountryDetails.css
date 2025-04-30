@@ -1,0 +1,142 @@
+.country-details-container {
+  padding: 2rem;
+  max-width: 100%;
+  margin: 0 auto;
+  color: #111;
+  background-color: #f0f0f0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  height: 1000px;
+
+  opacity: 0;
+  transform: translateY(50px); /* Start lower */
+  animation: fadeInUp 1.5s ease forwards;
+}
+
+/* Fade in from bottom */
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.back-btn {
+  color: #133b96;
+  padding: 0.5rem 1.5rem;
+  border: 1px solid #133b96;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  position: relative;
+  margin-top: 10px;
+  
+ 
+}
+/* CountryDetails.css */
+
+.favourite-btn {
+  padding: 10px 20px;
+  background-color: #133b96;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.favourite-btn:hover {
+  background-color: #133a96d1;
+  color: #fff;
+}
+
+.toast-warning {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+  font-weight: bold;
+}
+
+
+h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  text-align: center;
+  color: #0a0a0a;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.details-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.country-flag {
+  width: 400px;
+  max-width: 90%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  
+}
+
+.country-info {
+  text-align: center;
+  width: 100%;
+}
+
+.country-info h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.info-columns {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.info-columns > div {
+  flex: 1;
+  max-width: 400px;
+  text-align: left;
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+p {
+  margin: 0.5rem 0;
+}
+
+.border-countries {
+  margin-top: 2rem;
+}
+
+.borders-list {
+  margin-top: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.border-pill {
+  background-color: #133b96;
+  color: white;
+  padding: 0.3rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+.loading-text {
+  text-align: center;
+  margin-top: 5rem;
+  font-size: 1.5rem;
+}

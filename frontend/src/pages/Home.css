@@ -1,0 +1,76 @@
+/* Container Styles */
+.home-container {
+  padding: 1rem;
+  max-width: 100%;
+  margin: auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  opacity: 0; 
+  transform: translateY(20px); /* Start a little lower */
+  animation: fadeInUp 1.5s ease forwards; /* Animate it */
+}
+
+/* Heading */
+.home-container h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #133b96;
+  opacity: 0; 
+  transform: translateY(20px); /* Start a little lower */
+  animation: fadeInUp 1.5s ease forwards; /* Animate it */
+}
+
+/* Define the fadeInUp animation */
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0); /* Move to original position */
+  }
+}
+
+/* Filters */
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+  opacity: 0; 
+  transform: translateY(20px); /* Start a little lower */
+  animation: fadeInUp 1.5s ease forwards; /* Animate it */
+}
+
+.filters input,
+.filters select {
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #133b96;
+  background-color: #ffffff;
+  transition: border 0.3s ease;
+  min-width: 180px;
+}
+
+.filters input:focus,
+.filters select:focus {
+  border-color: #133b96;
+  outline: none;
+}
+
+/* Country Grid */
+.country-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding-top: 1rem;
+}
+
+
+
+/* Responsive Fix */
+@media (max-width: 768px) {
+  .filters {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}

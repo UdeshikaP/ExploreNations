@@ -1,0 +1,194 @@
+/* Main container with background */
+.login-container-p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #fff8f3;
+
+  /* Fade-in animation */
+  opacity: 0;
+  animation: fadeIn 1.5s ease forwards;
+}
+
+/* Define the keyframes */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+
+/* Welcome message styling */
+.welcome-container-p {
+  text-align: center;
+  margin-bottom: 30px;
+  max-width: 450px;
+}
+
+.welcome-heading-p {
+  color: #133b96;
+  font-size: 2.2rem;
+  margin: 0 0 10px 0;
+  font-weight: 600;
+}
+
+.welcome-message-p {
+  color: #666;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+/* Modal/card styling */
+.login-modal-p {
+  background-color: white;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 450px;
+  padding: 24px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  position: relative;
+}
+
+/* Header styling */
+.login-header-p {
+  display: flex;
+  justify-content: center;
+  /* Center the header content */
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.login-header-p h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Form styling */
+.login-form-p {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-groupL-p {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.labelL-p {
+  font-size: 1rem;
+  color: #555;
+  font-weight: 500;
+}
+
+.inputL-p[type="email"] {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  width: 95%;
+  background-color: white !important;
+}
+
+.inputL-p[type="email"]:focus {
+  outline: none;
+  border-color: #133b96;
+  box-shadow: 0 0 0 2px rgba(255, 107, 0, 0.1);
+}
+
+.inputpwd-p[type="password"] {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  width: 95% !important;
+  background-color: white !important;
+}
+
+.inputpwd-p[type="password"]:focus {
+  outline: none;
+  border-color: #133b96;
+  box-shadow: 0 0 0 2px rgba(255, 107, 0, 0.1);
+
+}
+
+/* Password input container */
+.password-input-container-p {
+  position: relative;
+  width: 100% !important;
+}
+
+.toggle-password-p {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #777;
+}
+
+.toggle-password-p svg {
+  font-size: 1.2rem;
+}
+
+/* Button styling */
+.login-button-p {
+  background-color: #133b96;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  width: 100%;
+  /* Full width button */
+}
+
+.login-button-p:hover {
+  background-color: #133b96;
+}
+
+/* Sign up prompt */
+.signup-prompt-p- {
+  margin-top: 24px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.signup-prompt-p p {
+  font-weight: 500;
+}
+
+.signup-prompt-p .signup-link-p {
+  color: #133b96;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.signup-prompt-p .signup-link-p:hover {
+  text-decoration: underline;
+}
+
+/* Responsive styles */
+@media (max-width: 480px) {
+  .login-modal-p {
+    max-width: 100%;
+    border-radius: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .login-form-p {
+    flex: 1;
+  }
+}

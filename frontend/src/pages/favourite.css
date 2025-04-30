@@ -1,0 +1,103 @@
+.favourites-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.favourites-container h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 28px;
+  color: #133b96;
+}
+
+.favourites-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply fade-in to the entire container */
+.favourites-container {
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Optional: Staggered fade-in for each card */
+.favourite-card {
+  animation: fadeIn 0.6s ease-in-out;
+  animation-fill-mode: both;
+  position: relative;
+  background: #f0f4ff;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.favourite-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Stagger effect using nth-child */
+.favourite-card:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.favourite-card:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.favourite-card:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.favourite-card:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+.favourite-card:nth-child(5) {
+  animation-delay: 0.5s;
+}
+
+
+
+
+.favourite-card img {
+  width: 100%;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.favourite-card p {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Heart icon styling */
+.heart-icon {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.heart-icon:hover {
+  transform: scale(1.2);
+}

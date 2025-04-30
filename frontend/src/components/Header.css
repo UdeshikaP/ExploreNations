@@ -1,0 +1,95 @@
+nav {
+  background-color: #ffffff; /* main blue color */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 25px ;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav h3 {
+  
+  font-weight: bold;
+  color: #133b96;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  display: inline-block;
+
+}
+
+.logout-btn{
+  background-color: #133b96;
+  color: #ffffff;
+  border: none;
+  padding: 8px 18px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin-right: 30px;
+}
+
+.f-btn{
+  color: #133b96;
+  border: none;
+  padding: 8px 18px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 5px;
+  border: 1px solid #133b96;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  background-color: #ffffff;
+  margin-right: 10px;
+  
+}
+
+a {
+  text-decoration: none;
+}
+
+a .f-btn {
+  text-decoration: none;
+}
+
+.f-btn:hover{
+  transform: translateX(-4px);
+ 
+}
+
+
+.login-btn{
+  color: #133b96;
+  border: none;
+  padding: 8px 18px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 5px;
+  border: 1px solid #133b96;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin-right: 10px;
+  background-color: #ffffff;
+}
+
+.login-btn:hover{
+  background-color: #133b96;
+  color: #ffffff;
+}
+
+
+.signup-btn{
+  background-color: #133b96;
+  color: #ffffff;
+  border: none;
+  padding: 8px 18px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin-right: 35px;
+}
+
