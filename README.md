@@ -5,11 +5,11 @@ ExploreNations is a modern and responsive React frontend application built using
 
 ## 🌍 Key Features
 - Browse and search countries by name
-- Filter countries by region or language
-- View detailed country information (Name, Capital, Region, Population, Languages, and Flag)
+- Filter countries by region,language,currencies or timezones
+- View detailed country information (Name, Capital, Region, Population, Languages,sub region,top level domain,currencies,boader countries and Flag)
 - Responsive UI with dynamic updates (no page reload)
-- (Optional) User authentication and session management
-- Built with a modern CSS framework (Tailwind CSS / Bootstrap / Material-UI)
+- User authentication and session management
+- Built with a modern CSS framework 
 - Unit and integration testing using Jest and React Testing Library
 
 ## 🛠️ Tech Stack
